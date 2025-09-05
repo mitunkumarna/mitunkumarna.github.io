@@ -103,9 +103,10 @@
 <body>
 
   <header>
-    <h1>My Portfolio</h1>
+    <h1>MITUN KUMAR NA</h1>
     <nav>
       <a href="#about">About</a>
+      <a href="#education">Education</a>
       <a href="#skills">Skills</a>
       <a href="#aoi">Areas of Interest</a>
       <a href="#projects">Projects</a>
@@ -125,6 +126,119 @@
     Beyond technical skills, I am focused on solving real-world challenges in VLSI design, functional verification, and embedded digital systems. My goal is to innovate at the intersection of hardware and software, contributing to technologies that drive the future of computing.
   </p>
 </section>
+
+  <section id="education">
+  <h2>Education</h2>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>B.E. Electronics and Communication Engineering</h3>
+        <h4>PSG Institute of Technology and Applied Research, Coimbatore</h4>
+        <span class="year">2026</span>
+        <p>CGPA: <strong>8.09</strong> (till 5th sem)</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>Higher Secondary Education</h3>
+        <h4>Kids Club Matriculation Higher Secondary School, Tiruppur</h4>
+        <span class="year">2022</span>
+        <p>Percentage: <strong>97.33%</strong></p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>Secondary Education</h3>
+        <h4>Kids Club Matriculation Higher Secondary School, Tiruppur</h4>
+        <span class="year">2020</span>
+        <p>Percentage: <strong>97.8%</strong></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  #education {
+    margin: 50px 0;
+    text-align: center;
+  }
+
+  #education h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #166534;
+    margin-bottom: 40px;
+  }
+
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #22c55e;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+  }
+
+  .timeline-item {
+    padding: 20px;
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: 0 4px 12px rgba(22, 101, 52, 0.15);
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+  }
+
+  .timeline-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .timeline-item:nth-child(odd) {
+    left: 0;
+  }
+
+  .timeline-item:nth-child(even) {
+    left: 55%;
+  }
+
+  .timeline-content h3 {
+    font-size: 20px;
+    color: #166534;
+    margin-bottom: 5px;
+  }
+
+  .timeline-content h4 {
+    font-size: 16px;
+    color: #4b5563;
+    margin-bottom: 10px;
+  }
+
+  .timeline-content .year {
+    font-weight: bold;
+    color: #22c55e;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .timeline-content p {
+    font-size: 15px;
+    color: #374151;
+  }
+</style>
 
 <section id="skills">
   <h2>Technical Skills</h2>
@@ -146,9 +260,7 @@
     <div class="aoi-card">Microprocessors & Microcontrollers</div>
     <div class="aoi-card">Digital VLSI Design</div>
     <div class="aoi-card">Functional Verification</div>
-    <div class="aoi-card">Embedded Systems</div>
-    <div class="aoi-card">C/C++ Programming</div>
-    <div class="aoi-card">AI & ML</div>
+    <div class="aoi-card">RTL Design</div>
   </div>
 </section>
 

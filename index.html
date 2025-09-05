@@ -140,14 +140,44 @@
 
 <section id="aoi">
   <h2>Areas of Interest</h2>
-  <ul style="list-style-type: square; line-height: 1.8;">
-    <li>Digital Electronics</li>
-    <li>Computer Architecture</li>
-    <li>Microprocessors and Microcontrollers</li>
-    <li>Digital VLSI Design</li>
-    <li>Functional Verification</li>
-  </ul>
+  <div class="aoi-grid">
+    <div class="aoi-card">Digital Electronics</div>
+    <div class="aoi-card">Computer Architecture</div>
+    <div class="aoi-card">Microprocessors & Microcontrollers</div>
+    <div class="aoi-card">Digital VLSI Design</div>
+    <div class="aoi-card">Functional Verification</div>
+    <div class="aoi-card">Embedded Systems</div>
+    <div class="aoi-card">C/C++ Programming</div>
+    <div class="aoi-card">AI & ML</div>
+  </div>
 </section>
+
+<style>
+  .aoi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .aoi-card {
+    background: #ffffff;
+    border: 1px solid #a7f3d0; /* mint green border */
+    padding: 30px 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #166534;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .aoi-card:hover {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(22, 101, 52, 0.3);
+  }
+</style>
+
 
 <section id="projects">
   <h2>Project Work</h2>
@@ -171,10 +201,10 @@
     <div style="flex: 1; min-width: 280px; max-width: 400px; margin: 10px; font-family: Arial, sans-serif; color: #333;">
       <h3>Mitun Kumar Na</h3>
       <p>Electronics and Communication Engineer</p>
-      <p><strong>Phone:</strong> +91 9876543210</p>
-      <p><strong>Email:</strong> mitunkumarna@gmail.com</p>
+      <p><strong>Phone:</strong> +91 7305688836</p>
+      <p><strong>Email:</strong> mitunkumar.na@gmail.com</p>
       <p><strong>GitHub:</strong> <a href="https://github.com/mitunkumarna" target="_blank">github.com/mitunkumarna</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mitunkumarna" target="_blank">linkedin.com/in/mitunkumarna</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mitunkumar/" target="_blank">linkedin.com/in/mitunkumarna</a></p>
     </div>
   </div>
 </section>

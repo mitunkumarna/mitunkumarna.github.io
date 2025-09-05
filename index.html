@@ -37,7 +37,7 @@
   padding: 60px 20px;
   max-width: 1000px;
   margin: 0 auto;
-  text-align: left;   /* content aligned left */
+  text-align: center;   /* content aligned left */
 }
 
 section h2 {
@@ -656,16 +656,20 @@ section h2 {
 
 <section id="contact">
   <h2>Contact Me</h2>
+  <p class="contact-subtitle">Mitun Kumar Na <br> Electronics and Communication Engineer</p>
   
   <!-- Contact Info with Icons -->
   <div class="contact-info">
-    <p><i class="fas fa-phone"></i> +91 7305688836</p>
+    <p><i class="fas fa-phone"></i> <a href="tel:+917305688836">+91 7305688836</a></p>
     <p><i class="fas fa-envelope"></i> <a href="mailto:mitunkumar.na@gmail.com">mitunkumar.na@gmail.com</a></p>
     <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/mitunkumar/" target="_blank">linkedin.com/in/mitunkumar</a></p>
   </div>
 
   <!-- Social Icons -->
   <div class="contact-icons">
+    <a href="tel:+917305688836" target="_blank" title="Phone">
+      <i class="fas fa-phone"></i>
+    </a>
     <a href="mailto:mitunkumar.na@gmail.com" target="_blank" title="Email">
       <i class="fas fa-envelope"></i>
     </a>
@@ -703,7 +707,14 @@ section h2 {
     font-size: 28px;
     font-weight: 700;
     color: #166534;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+  }
+
+  .contact-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: #065f46;
+    margin-bottom: 25px;
   }
 
   .contact-info {
@@ -713,12 +724,16 @@ section h2 {
   }
 
   .contact-info p {
-    margin: 8px 0;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
   }
 
   .contact-info i {
     color: #16a34a;
-    margin-right: 10px;
+    font-size: 20px;
   }
 
   .contact-info a {
@@ -785,6 +800,7 @@ section h2 {
     background: linear-gradient(135deg, #16a34a, #065f46);
   }
 </style>
+
 
 
 <footer>

@@ -9,21 +9,34 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center;
       background: #f4f4f9;
     }
     header {
       background: #333;
       color: #fff;
       padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
     }
     section {
       padding: 50px 20px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
     }
     footer {
       background: #333;
       color: #fff;
-      padding: 10px;
+      text-align: center;
+      padding: 15px;
     }
   </style>
 </head>
@@ -31,16 +44,43 @@
 
   <header>
     <h1>Welcome to My Portfolio</h1>
-    <p>Hello! I’m [Your Name]</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
+  <section id="about">
     <h2>About Me</h2>
-    <p>I’m learning web development and building my first portfolio website!</p>
+    <p>Hello! I’m Mitun Kumar, an engineering student passionate about VLSI, Embedded Systems, and AI projects.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>✅ Verilog, FPGA Design</p>
+    <p>✅ Digital Electronics</p>
+    <p>✅ C, C++, Python</p>
+    <p>✅ AI/ML for real-world applications</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>🔹 Verilog-Based Sound Generator</p>
+    <p>🔹 NovaX7 Custom Microcontroller</p>
+    <p>🔹 AI-Based Secure UAV Communication</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: yourname@email.com</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    <p>GitHub: <a href="https://github.com/mitunkumarna" target="_blank">github.com/mitunkumarna</a></p>
   </section>
 
   <footer>
-    <p>© 2025 My Portfolio</p>
+    <p>© 2025 Mitun Kumar</p>
   </footer>
 
 </body>

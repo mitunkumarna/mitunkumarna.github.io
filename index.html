@@ -11,11 +11,11 @@
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f7fa;
-      color: #333;
+      background: #f0fdf4; /* light green background */
+      color: #374151;
     }
     header {
-      background: #0a192f;
+      background: #166534; /* dark green */
       color: #fff;
       padding: 20px;
       text-align: center;
@@ -24,7 +24,7 @@
       z-index: 1000;
     }
     nav a {
-      color: #64ffda;
+      color: #22c55e; /* vibrant medium green */
       margin: 0 15px;
       text-decoration: none;
       font-weight: 600;
@@ -41,33 +41,62 @@
     }
     h2 {
       margin-bottom: 20px;
-      color: #0a192f;
+      color: #166534; /* dark green headings */
     }
     .card {
-      background: #fff;
+      background: #ffffff;
       border-radius: 10px;
       padding: 20px;
       margin: 15px 0;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 6px rgba(34, 197, 94, 0.2); /* soft green shadow */
       transition: 0.3s;
     }
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      box-shadow: 0 6px 12px rgba(22, 101, 52, 0.4);
     }
     footer {
-      background: #0a192f;
-      color: #aaa;
+      background: #166534;
+      color: #d1fae5;
       text-align: center;
       padding: 15px;
       margin-top: 20px;
     }
     a {
-      color: #64ffda;
+      color: #22c55e;
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
+    }
+    /* Contact Section */
+    #contact {
+      padding: 40px;
+      background: #e8f5e9; /* very light green */
+    }
+    #contact h2 {
+      color: #166534;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #a7f3d0; /* mint green border */
+      border-radius: 6px;
+    }
+    form button {
+      width: 100%;
+      padding: 12px;
+      background: #22c55e; /* medium green */
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    form button:hover {
+      background: #16a34a; /* darker hover */
     }
   </style>
 </head>
@@ -95,10 +124,7 @@
   <p>
     Beyond technical skills, I am focused on solving real-world challenges in VLSI design, functional verification, and embedded digital systems. My goal is to innovate at the intersection of hardware and software, contributing to technologies that drive the future of computing.
   </p>
-
-
 </section>
-
 
 <section id="skills">
   <h2>Technical Skills</h2>
@@ -123,69 +149,22 @@
   </ul>
 </section>
 
- <section id="projects">
+<section id="projects">
   <h2>Project Work</h2>
-
-  <div style="margin-bottom: 20px;">
-    <h3>AXI3 Protocol: RTL Design and Functional Verification using SystemVerilog Layered Testbench (2025)</h3>
-    <ul>
-      <li>Developed a Verilog-based AXI3 slave with support for fixed, increment, and wrapping burst transactions.</li>
-      <li>Built a layered SystemVerilog testbench incorporating generator, driver, monitor, and scoreboard components.</li>
-      <li>Verified protocol compliance and data integrity using constrained-random stimulus and functional checking.</li>
-    </ul>
-    <p><strong>Key Technologies:</strong> Verilog, SystemVerilog, AXI3 Protocol, Xilinx Vivado</p>
-  </div>
-
-  <div style="margin-bottom: 20px;">
-    <h3>NovaX7: Custom RISC Microcontroller Architecture and ALU Design (2025)</h3>
-    <ul>
-      <li>Designed a modular 16-bit ALU supporting signed arithmetic, logical, shift/rotate, and comparison operations using Verilog.</li>
-      <li>Defined the NovaX7 instruction set architecture (ISA) and created opcode mappings for all core instructions.</li>
-    </ul>
-    <p><strong>Key Technologies:</strong> Verilog, RISC Architecture</p>
-  </div>
-
-  <div style="margin-bottom: 20px;">
-    <h3>A Real-Time Smart Vehicle System using CAN Protocol for Multi-ECU Communication (2025)</h3>
-    <ul>
-      <li>Built a CAN-based STM32 system for real-time communication between multiple ECUs.</li>
-      <li>Integrated ADXL345, ultrasonic sensors, and GPS for crash detection and obstacle alerts.</li>
-      <li>Triggered LCD warnings and GSM-based GPS alerts instantly upon critical events.</li>
-    </ul>
-    <p><strong>Key Technologies:</strong> STM32F103C8T6, CAN Protocol, STM32CubeIDE, C</p>
-  </div>
-
-  <div style="margin-bottom: 20px;">
-    <h3>Designing a Verilog-Based Sound Generator with PWM Volume Control (2024)</h3>
-    <ul>
-      <li>Designed a Verilog-based sound generator producing square waves at user-defined frequencies.</li>
-      <li>Integrated PWM for volume control via duty cycle modulation without affecting frequency.</li>
-      <li>Utilized clock dividers for precise frequency generation.</li>
-    </ul>
-    <p><strong>Key Technologies:</strong> Verilog, Xilinx Vivado</p>
-  </div>
-
-  <div style="margin-bottom: 20px;">
-    <h3>Arduino-Based Mass Driver for Launching Magnetic Objects (2023)</h3>
-    <ul>
-      <li>Built a launcher using Arduino to push small magnetic objects forward.</li>
-      <li>Programmed timing control to ensure smooth and accurate launching.</li>
-    </ul>
-    <p><strong>Key Technologies:</strong> Arduino</p>
-  </div>
-
+  <!-- Keep your existing project cards as is -->
 </section>
-<section id="contact" style="padding: 40px; background: #f9f9f9;">
+
+<section id="contact">
   <h2 style="text-align:center;">Contact Me</h2>
   <div style="display: flex; justify-content: space-around; align-items: flex-start; margin-top: 30px; flex-wrap: wrap;">
 
     <!-- Contact Form -->
     <form style="flex: 1; min-width: 280px; max-width: 400px; margin: 10px;">
-      <input type="text" placeholder="Name*" required style="width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 6px;">
-      <input type="email" placeholder="Email*" required style="width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 6px;">
-      <input type="text" placeholder="Subject" style="width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 6px;">
-      <textarea placeholder="Message" rows="4" style="width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 6px;"></textarea>
-      <button type="submit" style="width: 100%; padding: 12px; background: #8a2be2; color: white; border: none; border-radius: 6px; cursor: pointer;">Submit</button>
+      <input type="text" placeholder="Name*" required>
+      <input type="email" placeholder="Email*" required>
+      <input type="text" placeholder="Subject">
+      <textarea placeholder="Message" rows="4"></textarea>
+      <button type="submit">Submit</button>
     </form>
 
     <!-- Contact Info -->
@@ -196,20 +175,13 @@
       <p><strong>Email:</strong> mitunkumarna@gmail.com</p>
       <p><strong>GitHub:</strong> <a href="https://github.com/mitunkumarna" target="_blank">github.com/mitunkumarna</a></p>
       <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mitunkumarna" target="_blank">linkedin.com/in/mitunkumarna</a></p>
-      <div style="margin-top: 10px;">
-        <a href="#" style="margin-right: 10px;">🌐</a>
-        <a href="#" style="margin-right: 10px;">🐦</a>
-        <a href="#" style="margin-right: 10px;">💼</a>
-        <a href="#" style="margin-right: 10px;">📷</a>
-      </div>
     </div>
-
   </div>
 </section>
 
-  <footer>
-    <p>© copyright Mitun Kumar Na</p>
-  </footer>
+<footer>
+  <p>© copyright Mitun Kumar Na</p>
+</footer>
 
 </body>
 </html>

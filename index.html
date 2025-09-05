@@ -306,8 +306,7 @@ header h1 {
 
 </style>
 
-
-  <section id="education">
+<section id="education">
   <h2>Education</h2>
   <div class="timeline">
 
@@ -342,6 +341,7 @@ header h1 {
 </section>
 
 <style>
+  /* Section Styling */
   #education {
     margin: 50px 0;
     text-align: center;
@@ -354,89 +354,101 @@ header h1 {
     margin-bottom: 40px;
   }
 
-.timeline {
-  position: relative;
-  max-width: 800px;
-  margin: auto;
-  padding: 20px 0;
-}
-
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 4px;
-  background: #22c55e;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%); /* ensures perfect center */
-}
-
-.timeline-item {
-  position: relative;
-  width: 45%;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(22, 101, 52, 0.15);
-  margin: 20px 0;
-  transition: transform 0.3s ease;
-}
-
-.timeline-item:hover {
-  transform: translateY(-5px);
-}
-
-.timeline-item:nth-child(odd) {
-  left: 0;
-}
-
-.timeline-item:nth-child(even) {
-  left: 55%; /* can also use calc(50% + 10px) for more precise spacing */
-}
-
-/* Add arrows to connect items to the center line (optional) */
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: #22c55e;
-  top: 20px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.timeline-item:nth-child(odd)::before {
-  right: -8px;
-}
-
-.timeline-item:nth-child(even)::before {
-  left: -8px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 800px) {
-  .timeline-item {
-    width: 90%;
-    left: 0 !important;
-    margin: 20px auto;
+  /* Timeline Container */
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
   }
 
+  /* Vertical Line */
   .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #22c55e;
+    top: 0;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
   }
-}
 
-@media (max-width: 600px) {
-  #education {
-    padding: 30px 10px;
+  /* Timeline Items */
+  .timeline-item {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(22, 101, 52, 0.15);
+    margin: 20px 0;
+    transition: transform 0.3s ease;
   }
-}
 
+  .timeline-item:hover {
+    transform: translateY(-5px);
+  }
 
+  /* Odd items left, even items right */
+  .timeline-item:nth-child(odd) {
+    left: 0;
+    margin-left: 0;
+  }
+
+  .timeline-item:nth-child(even) {
+    left: 50%;
+    margin-left: 20px; /* small gap from vertical line */
+  }
+
+  /* Timeline circles */
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #22c55e;
+    top: 20px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .timeline-item:nth-child(odd)::before {
+    right: -8px;
+  }
+
+  .timeline-item:nth-child(even)::before {
+    left: -8px;
+  }
+
+  /* Content inside timeline items */
+  .timeline-content {
+    text-align: left;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 800px) {
+    .timeline-item {
+      width: 90%;
+      left: 50% !important;
+      transform: translateX(-50%);
+      margin: 20px auto;
+    }
+
+    .timeline-item::before {
+      left: 50%;
+      transform: translateX(-50%);
+      right: auto;
+    }
+  }
+
+  @media (max-width: 600px) {
+    #education {
+      padding: 30px 10px;
+    }
+  }
 </style>
+
 
 <section id="skills">
   <h2>Technical Skills</h2>

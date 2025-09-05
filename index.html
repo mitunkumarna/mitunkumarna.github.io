@@ -242,15 +242,129 @@
 
 <section id="skills">
   <h2>Technical Skills</h2>
-  <ul style="list-style-type: none; padding: 0; line-height: 1.8;">
-    <li><strong>Programming Languages:</strong> C, C++</li>
-    <li><strong>Hardware Description Languages:</strong> Verilog, SystemVerilog</li>
-    <li><strong>Verification Methodologies:</strong> UVM (Universal Verification Methodology)</li>
-    <li><strong>Assembly Languages:</strong> ARM, x86, MCS-51</li>
-    <li><strong>Protocols:</strong> AXI, AHB, APB, CAN, SPI, I2C, UART</li>
-    <li><strong>Technologies & Tools:</strong> Xilinx Vivado, MATLAB, Cadence Virtuoso</li>
-  </ul>
+  <div class="skills-container">
+
+    <div class="skill-category">
+      <h3>Programming Languages</h3>
+      <div class="tags">
+        <span>C</span>
+        <span>C++</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Hardware Description Languages</h3>
+      <div class="tags">
+        <span>Verilog</span>
+        <span>SystemVerilog</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Verification</h3>
+      <div class="tags">
+        <span>UVM</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Assembly Languages</h3>
+      <div class="tags">
+        <span>ARM</span>
+        <span>x86</span>
+        <span>MCS-51</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Protocols</h3>
+      <div class="tags">
+        <span>AXI</span>
+        <span>AHB</span>
+        <span>APB</span>
+        <span>CAN</span>
+        <span>SPI</span>
+        <span>I2C</span>
+        <span>UART</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Technologies & Tools</h3>
+      <div class="tags">
+        <span>Xilinx Vivado</span>
+        <span>MATLAB</span>
+        <span>Cadence Virtuoso</span>
+      </div>
+    </div>
+
+  </div>
 </section>
+
+<style>
+  #skills {
+    margin: 60px 0;
+    text-align: center;
+  }
+
+  #skills h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #166534;
+    margin-bottom: 40px;
+  }
+
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .skill-category {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(22, 101, 52, 0.08);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .skill-category:hover {
+    transform: translateY(-6px);
+  }
+
+  .skill-category h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #065f46;
+    margin-bottom: 12px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .tags span {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(22, 101, 52, 0.15);
+    transition: transform 0.2s;
+  }
+
+  .tags span:hover {
+    transform: scale(1.1);
+  }
+</style>
+
 
 <section id="aoi">
   <h2>Areas of Interest</h2>
@@ -431,29 +545,106 @@
 
 
 <section id="contact">
-  <h2 style="text-align:center;">Contact Me</h2>
-  <div style="display: flex; justify-content: space-around; align-items: flex-start; margin-top: 30px; flex-wrap: wrap;">
-
-    <!-- Contact Form -->
-    <form style="flex: 1; min-width: 280px; max-width: 400px; margin: 10px;">
-      <input type="text" placeholder="Name*" required>
-      <input type="email" placeholder="Email*" required>
-      <input type="text" placeholder="Subject">
-      <textarea placeholder="Message" rows="4"></textarea>
-      <button type="submit">Submit</button>
-    </form>
-
-    <!-- Contact Info -->
-    <div style="flex: 1; min-width: 280px; max-width: 400px; margin: 10px; font-family: Arial, sans-serif; color: #333;">
-      <h3>Mitun Kumar Na</h3>
-      <p>Electronics and Communication Engineer</p>
-      <p><strong>Phone:</strong> +91 7305688836</p>
-      <p><strong>Email:</strong> mitunkumar.na@gmail.com</p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/mitunkumarna" target="_blank">github.com/mitunkumarna</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mitunkumar/" target="_blank">linkedin.com/in/mitunkumarna</a></p>
-    </div>
+  <h2>Contact Me</h2>
+  
+  <!-- Social Links -->
+  <div class="contact-icons">
+    <a href="mailto:mitunkumar.na@gmail.com" target="_blank" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="github.com/mitunkumarna" target="_blank" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/mitunkumar/" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
   </div>
+
+  <!-- Contact Form -->
+  <form action="https://formspree.io/f/xyzdbbdj" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
+
+<!-- FontAwesome for icons -->
+<script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+
+<style>
+  #contact {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f0fdf4;
+    border-radius: 12px;
+    margin: 50px auto;
+    max-width: 800px;
+  }
+
+  #contact h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #166534;
+    margin-bottom: 30px;
+  }
+
+  .contact-icons {
+    margin-bottom: 25px;
+  }
+
+  .contact-icons a {
+    font-size: 28px;
+    margin: 0 15px;
+    color: #16a34a;
+    transition: transform 0.2s, color 0.2s;
+  }
+
+  .contact-icons a:hover {
+    color: #065f46;
+    transform: scale(1.2);
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #16a34a;
+    box-shadow: 0 0 5px rgba(22, 163, 74, 0.4);
+  }
+
+  .contact-form button {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .contact-form button:hover {
+    background: linear-gradient(135deg, #16a34a, #065f46);
+  }
+</style>
+
 
 <footer>
   <p>© copyright Mitun Kumar Na</p>

@@ -341,7 +341,6 @@ header h1 {
 </section>
 
 <style>
-  /* Section Styling */
   #education {
     margin: 50px 0;
     text-align: center;
@@ -354,11 +353,10 @@ header h1 {
     margin-bottom: 40px;
   }
 
-  /* Timeline Container */
   .timeline {
     position: relative;
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto;
     padding: 20px 0;
   }
 
@@ -378,27 +376,22 @@ header h1 {
   .timeline-item {
     position: relative;
     width: 45%;
-    padding: 20px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(22, 101, 52, 0.15);
+    padding: 20px;
     margin: 20px 0;
-    transition: transform 0.3s ease;
   }
 
-  .timeline-item:hover {
-    transform: translateY(-5px);
-  }
-
-  /* Odd items left, even items right */
+  /* Position odd items to the left and even to the right, staggered slightly */
   .timeline-item:nth-child(odd) {
-    left: 0;
     margin-left: 0;
+    margin-right: auto;
   }
 
   .timeline-item:nth-child(even) {
-    left: 50%;
-    margin-left: 20px; /* small gap from vertical line */
+    margin-left: auto;
+    margin-right: 0;
   }
 
   /* Timeline circles */
@@ -414,14 +407,14 @@ header h1 {
   }
 
   .timeline-item:nth-child(odd)::before {
-    right: -8px;
+    right: -8px; /* connects to line */
   }
 
   .timeline-item:nth-child(even)::before {
     left: -8px;
   }
 
-  /* Content inside timeline items */
+  /* Center text inside cards */
   .timeline-content {
     text-align: left;
   }
@@ -430,9 +423,9 @@ header h1 {
   @media (max-width: 800px) {
     .timeline-item {
       width: 90%;
-      left: 50% !important;
-      transform: translateX(-50%);
-      margin: 20px auto;
+      margin: 20px auto !important;
+      left: 0 !important;
+      right: 0 !important;
     }
 
     .timeline-item::before {

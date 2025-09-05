@@ -116,72 +116,82 @@
 
 <section id="about">
   <h2>About Me</h2>
-  <p>
-    I am an Electronics student driven to contribute to the semiconductor industry through efficient digital design, RTL development, and system-level verification. My hands-on experience with HDLs, embedded platforms, and FPGA prototyping has helped me design high-performance, reliable, and silicon-ready digital systems.
-  </p>
-  <p>
-    Passionate about digital hardware design on and around silicon, I specialize in RTL Design (Verilog, SystemVerilog), UVM-based verification, and AXI protocols. I have worked with microprocessors and microcontrollers including 8085, 8086, MCS-51, and ARM-based platforms, giving me a strong foundation in both hardware and embedded systems.
-  </p>
-  <p>
-    Beyond technical skills, I am focused on solving real-world challenges in VLSI design, functional verification, and embedded digital systems. My goal is to innovate at the intersection of hardware and software, contributing to technologies that drive the future of computing.
-  </p>
-
-  <!-- Download Resume Button -->
-  <a href="assets/MitunKumarNa_Resume.pdf" download class="resume-btn">
-    <i class="fas fa-download"></i> Download Resume
-  </a>
+  <div class="about-container">
+    <p>
+      I am an Electronics student driven to contribute to the semiconductor industry through efficient digital design, RTL development, and system-level verification. My hands-on experience with HDLs, embedded platforms, and FPGA prototyping has helped me design high-performance, reliable, and silicon-ready digital systems.
+    </p>
+    <p>
+      Passionate about digital hardware design on and around silicon, I specialize in RTL Design (Verilog, SystemVerilog), UVM-based verification, and AXI protocols. I have worked with microprocessors and microcontrollers including 8085, 8086, MCS-51, and ARM-based platforms, giving me a strong foundation in both hardware and embedded systems.
+    </p>
+    <p>
+      Beyond technical skills, I am focused on solving real-world challenges in VLSI design, functional verification, and embedded digital systems. My goal is to innovate at the intersection of hardware and software, contributing to technologies that drive the future of computing.
+    </p>
+    <!-- Download Resume Button -->
+    <a href="assets/MitunKumarNa_Resume.pdf" download class="resume-btn">
+      <i class="fas fa-download"></i> Download Resume
+    </a>
+  </div>
 </section>
 
 <style>
-.resume-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 600;
-  color: white;
-  background: linear-gradient(135deg, #22c55e, #16a34a);
-  border: none;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(22, 163, 74, 0.3);
-}
+  #about {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    max-width: 900px;
+    margin: 50px auto;
+    animation: fadeIn 1.2s ease-in-out;
+  }
 
-.resume-btn i {
-  margin-right: 8px;
-}
+  #about h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    color: #166534;
+    margin-bottom: 30px;
+    position: relative;
+  }
 
-.resume-btn:hover {
-  background: linear-gradient(135deg, #16a34a, #065f46);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(6, 95, 70, 0.4);
-}
-</style>
+  .about-container p {
+    background: white;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #16a34a;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 
+  .about-container p:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(22, 163, 74, 0.15);
+  }
 
-<style>
   .resume-btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 12px 25px;
     background: linear-gradient(135deg, #22c55e, #16a34a);
     color: white;
-    font-weight: 600;
-    border-radius: 8px;
+    padding: 12px 25px;
+    border-radius: 10px;
     text-decoration: none;
+    font-weight: 600;
     font-size: 16px;
-    transition: background 0.3s ease, transform 0.2s;
+    transition: all 0.3s ease;
   }
+
   .resume-btn:hover {
     background: linear-gradient(135deg, #16a34a, #065f46);
     transform: scale(1.05);
   }
-  .resume-btn i {
-    margin-right: 8px;
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
   }
-  </style>
-</section>
+</style>
+
 
   <section id="education">
   <h2>Education</h2>

@@ -355,12 +355,11 @@ header h1 {
 
   .timeline {
     position: relative;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 20px 0;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
   }
 
-  /* Vertical Line */
   .timeline::after {
     content: '';
     position: absolute;
@@ -369,83 +368,57 @@ header h1 {
     top: 0;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    margin-left: -2px;
   }
 
-  /* Timeline Items */
   .timeline-item {
+    padding: 20px;
     position: relative;
-    width: 50%;
-    /*background: #fff;
+    background: #fff;
     border-radius: 8px;
-    /*box-shadow: 0 4px 12px rgba(22, 101, 52, 0.15);*/
-    padding: 20px 40px;
-    /*margin: 20px 0;*/
+    width: 45%;
+    box-shadow: 0 4px 12px rgba(22, 101, 52, 0.15);
+    margin: 20px 0;
+    transition: transform 0.3s ease;
   }
 
-  /* Position odd items to the left and even to the right, staggered slightly */
-/* Left items */
-.timeline-item:nth-child(odd) {
-  left: 0;
-  text-align: right;
-}
-
-/* Right items */
-.timeline-item:nth-child(even) {
-  left: 50%;
-  text-align: left;
-}
-
-  /* Timeline circles */
-  .timeline-item::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: #22c55e;
-    top: 20px;
-    border-radius: 50%;
-    z-index: 1;
+  .timeline-item:hover {
+    transform: translateY(-5px);
   }
 
-  .timeline-item:nth-child(odd)::before {
-    right: 0px; /* connects to line */
+  .timeline-item:nth-child(odd) {
+    left: 0;
   }
 
-  .timeline-item:nth-child(even)::before {
-    left: 0px;
+  .timeline-item:nth-child(even) {
+    left: 55%;
   }
 
-  /* Content box */
-.timeline-content {
-  background: #f1f1f1;
-  padding: 15px 20px;
-  border-radius: 6px;
-  display: inline-block;
-}
-
-  /* Responsive adjustments */
-  @media (max-width: 800px) {
-    .timeline-item {
-      width: 90%;
-      margin: 20px auto !important;
-      left: 0 !important;
-      right: 0 !important;
-    }
-
-    .timeline-item::before {
-      left: 50%;
-      transform: translateX(-50%);
-      right: auto;
-    }
+  .timeline-content h3 {
+    font-size: 20px;
+    color: #166534;
+    margin-bottom: 5px;
   }
 
-  @media (max-width: 600px) {
-    #education {
-      padding: 30px 10px;
-    }
+  .timeline-content h4 {
+    font-size: 16px;
+    color: #4b5563;
+    margin-bottom: 10px;
+  }
+
+  .timeline-content .year {
+    font-weight: bold;
+    color: #22c55e;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .timeline-content p {
+    font-size: 15px;
+    color: #374151;
   }
 </style>
+
 
 
 <section id="skills">

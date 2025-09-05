@@ -136,7 +136,7 @@
         <h3>B.E. Electronics and Communication Engineering</h3>
         <h4>PSG Institute of Technology and Applied Research, Coimbatore</h4>
         <span class="year">2026</span>
-        <p>CGPA: <strong>8.09</strong> (till 5th sem)</p>
+        <p>CGPA: <strong>8.11</strong> (till 6th sem)</p>
       </div>
     </div>
 
@@ -292,9 +292,143 @@
 
 
 <section id="projects">
-  <h2>Project Work</h2>
-  <!-- Keep your existing project cards as is -->
+  <h2>Projects</h2>
+  <div class="project-grid">
+
+    <div class="project-card">
+      <div class="card-front">
+        <h3>AXI3 Protocol</h3>
+        <p>2025</p>
+      </div>
+      <div class="card-back">
+        <p>RTL design & functional verification of AXI3 slave using layered SystemVerilog testbench.</p>
+        <p><strong>Tech:</strong> Verilog, SystemVerilog, Vivado</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-front">
+        <h3>NovaX7 Microcontroller</h3>
+        <p>2025</p>
+      </div>
+      <div class="card-back">
+        <p>Designed 16-bit ALU & custom ISA for NovaX7 microcontroller architecture.</p>
+        <p><strong>Tech:</strong> Verilog</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-front">
+        <h3>Smart Vehicle System</h3>
+        <p>2025</p>
+      </div>
+      <div class="card-back">
+        <p>CAN-based multi-ECU communication with crash detection & GPS alerts.</p>
+        <p><strong>Tech:</strong> STM32, CAN, C</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-front">
+        <h3>Sound Generator</h3>
+        <p>2024</p>
+      </div>
+      <div class="card-back">
+        <p>Square wave sound generator with PWM-based volume control.</p>
+        <p><strong>Tech:</strong> Verilog, Vivado</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-front">
+        <h3>Arduino Mass Driver</h3>
+        <p>2023</p>
+      </div>
+      <div class="card-back">
+        <p>Launcher for magnetic objects with precise timing control.</p>
+        <p><strong>Tech:</strong> Arduino</p>
+      </div>
+    </div>
+
+  </div>
 </section>
+
+<style>
+  #projects {
+    margin: 60px 0;
+    text-align: center;
+  }
+
+  #projects h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #166534;
+    margin-bottom: 40px;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .project-card {
+    perspective: 1000px;
+  }
+
+  .card-front, .card-back {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(22, 101, 52, 0.15);
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+
+  .card-front {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+  }
+
+  .card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+  }
+
+  .project-card:hover .card-front {
+    transform: rotateY(180deg);
+  }
+
+  .project-card:hover .card-back {
+    transform: rotateY(360deg);
+  }
+
+  .card-front h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .card-front p {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  .card-back p {
+    font-size: 14px;
+    color: #374151;
+    margin: 6px 0;
+  }
+</style>
+
 
 <section id="contact">
   <h2 style="text-align:center;">Contact Me</h2>

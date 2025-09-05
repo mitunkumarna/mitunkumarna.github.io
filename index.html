@@ -575,9 +575,8 @@ header h1 {
   }
 }
 
+
 </style>
-
-
 <section id="aoi">
   <h2>Areas of Interest</h2>
   <div class="aoi-grid">
@@ -593,7 +592,7 @@ header h1 {
 <style>
   .aoi-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 15px;
     margin-top: 20px;
   }
@@ -614,31 +613,6 @@ header h1 {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(22, 101, 52, 0.3);
   }
-  @media (max-width: 600px) {
-  .aoi-grid {
-    gap: 10px;
-  }
-
-  .aoi-card {
-    padding: 20px 15px;
-    font-size: 14px;
-  }
-    
-}
-.aoi-card {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInAoI 0.8s ease forwards;
-  animation-delay: 0.1s; /* slight stagger if needed */
-}
-
-@keyframes fadeInAoI {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 </style>
 
 
